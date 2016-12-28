@@ -5,66 +5,651 @@
         <title>Slides | extralight backgrounds</title>
         <!-- load external style files -->
         <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-        <link rel="stylesheet" type="text/css" href="stylesheets/flexboxgrid_my.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/flexgrid_new.css">
         <!-- <link rel="stylesheet" type="text/css" href="crow_2_1.css">
         <link rel="stylesheet" type="text/css" href="crow_2_1_o.css"> -->
         <!-- replace media queries in old browsers https://github.com/scottjehl/Respond -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>        
     </head>
     <body>
-        <!-- <div class="c-navbar" style="">
-            <div class="c-navbar__item">
-                Item
-                <span class="c-navbar__item__icon --left">1°</span>
-                <!-- <span class="c-navbar__item__span">Item</span>
-            </div>
-        </div> -->
-        <div id="" class="row">
-            <div class="c-flexnavbar col-xs" style="min-height:20px">
-                <div class="c-flexnavbar__item">
-                    <span class="c-flexnavbar__item__icon">1°</span>
-                    <span class="c-flexnavbar__item__span">Item</span>
-                </div>
-                <div class="c-flexnavbar__item">
-                    <span class="c-flexnavbar__item__icon">2°</span>
-                    <span class="c-flexnavbar__item__span">Item Special Class Business</span>
-                </div>
-                <div class="c-flexnavbar__item col-xs-2">
-                    <span class="c-flexnavbar__item__icon">3°</span>
-                    <span class="c-flexnavbar__item__span">Item</span>
-                </div>
-                <div class="c-flexnavbar__item">
-                    <span class="c-flexnavbar__item__icon">4°</span>
-                    <span class="c-flexnavbar__item__span">Item</span>
-                </div>
-                <div class="c-flexnavbar__item">
-                    <span class="c-flexnavbar__item__icon">5°</span>
-                    <span class="c-flexnavbar__item__span">Item</span>
-                </div>
-            </div>
-            <div class="col-xs-max" style="">
-                <div class="c-flexnavbar__item">
-                    Banner
-                </div>
-            </div>
-        </div>
-    <div id="footer" style="display:block">
-        <div>
-            Ok
-        </div>
+         <header id="header">
+    <div class="row row-center">
+      <h1 class="col-xs-12 headline"><span class="first">Flex</span>Grid <br/>
+        <small>CSS grid system based on the flexbox.</small></h1>
     </div>
+    <div class="row row-center">
+      <div class="col-xs-12">
+        <a class="link" target="_blank" href="http://w3.org/tr/css3-flexbox/#flex-containers">w3.org</a>
+        <a class="link" target="_blank" href="http://caniuse.com/#search=flexbox">Can I use</a>
+      </div>
+    </div>
+    <div class="row row-center">
+      <div class="col-xs">
+        <a class="button" target="_blank" href="https://github.com/yukozlovskiy/flexgrid/archive/master.zip">Download</a>
+        <a class="button" target="_blank" href="https://github.com/yukozlovskiy/flexgrid">Github</a>
+      </div>
+    </div>
+  </header>
+  <div id="wrapper">
+    <section class="page-section">
+      <h2>Grid options</h2>
+      <p>See how aspects of the FlexGrid system work across multiple devices with a handy table.</p>
+      <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+          <th></th>
+          <th>Extra small (Default)<br/><small>&lt;576px</small></th>
+          <th>Small<br/><small>≥576px</small></th>
+          <th>Medium<br/><small>≥768px</small></th>
+          <th>Large<br/><small>≥992px</small></th>
+          <th>Extra large<br/><small>≥1200px</small></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Grid behavior</td>
+          <td>Horizontal at all times</td>
+          <td colspan="4">Collapsed to start, horizontal above breakpoints</td>
+        </tr>
+        <tr>
+          <td>Class prefix</td>
+          <td><code>.col-xs-</code></td>
+          <td><code>.col-sm-</code></td>
+          <td><code>.col-md-</code></td>
+          <td><code>.col-lg-</code></td>
+          <td><code>.col-xl-</code></td>
+        </tr>
+        <tr>
+          <td># of columns</td>
+          <td colspan="5">12</td>
+        </tr>
+        <tr>
+          <td>Gutter width</td>
+          <td colspan="5">10px (5px on each side of a column)</td>
+        </tr>
+        <tr>
+          <td>Nestable</td>
+          <td colspan="5">Yes</td>
+        </tr>
+        <tr>
+          <td>Column ordering</td>
+          <td colspan="5">Yes</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="page-section">
+      <h2>HTML Syntax</h2>
+      <p>FlexGrid uses the same classes as Bootstrap. All you need to keep HTML syntax in that way: row, column, content.</p>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="content">1</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="content">1/2</div>
+        </div>
+        <div class="col-xs-6">
+          <div class="content">1/2</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <div class="content">1/3</div>
+        </div>
+        <div class="col-xs-4">
+          <div class="content">1/3</div>
+        </div>
+        <div class="col-xs-4">
+          <div class="content">1/3</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="content">1/4</div>
+        </div>
+        <div class="col-xs-3">
+          <div class="content">1/4</div>
+        </div>
+        <div class="col-xs-3">
+          <div class="content">1/4</div>
+        </div>
+        <div class="col-xs-3">
+          <div class="content">1/4</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2">
+          <div class="content">1/6</div>
+        </div>
+        <div class="col-xs-2">
+          <div class="content">1/6</div>
+        </div>
+        <div class="col-xs-2">
+          <div class="content">1/6</div>
+        </div>
+        <div class="col-xs-2">
+          <div class="content">1/6</div>
+        </div>
+        <div class="col-xs-2">
+          <div class="content">1/6</div>
+        </div>
+        <div class="col-xs-2">
+          <div class="content">1/6</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-1">
+          <div class="content">1/12</div>
+        </div>
+        <div class="col-xs-1">
+          <div class="content">1/12</div>
+        </div>
+        <div class="col-xs-1">
+          <div class="content">1/12</div>
+        </div>
+        <div class="col-xs-1">
+          <div class="content">1/12</div>
+        </div>
+        <div class="col-xs-1">
+          <div class="content">1/12</div>
+        </div>
+        <div class="col-xs-1">
+          <div class="content">1/12</div>
+        </div>
+        <div class="col-xs-1">
+          <div class="content">1/12</div>
+        </div>
+        <div class="col-xs-1">
+          <div class="content">1/12</div>
+        </div>
+        <div class="col-xs-1">
+          <div class="content">1/12</div>
+        </div>
+        <div class="col-xs-1">
+          <div class="content">1/12</div>
+        </div>
+        <div class="col-xs-1">
+          <div class="content">1/12</div>
+        </div>
+        <div class="col-xs-1">
+          <div class="content">1/12</div>
+        </div>
+      </div>
+      <pre><code>&lt;div class="row">
+    &lt;div class="col-xs-6">
+        &lt;div class="content">&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-6">
+        &lt;div class="content">&lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
+    </section>
+    <section class="page-section">
+      <h2>Responsive</h2>
+      <p>Responsive grid works by adding media classes to the grid cells (xs, sm, md, etc.).
+        When those media values are met, the grids automatically adjust accordingly.</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="content">col-xs-12 col-sm-6 col-md-3</div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3">
+          <div class="content">col-xs-6 col-sm-6 col-md-3</div>
+        </div>
+        <div class="col-xs-6 col-sm-12 col-md-6">
+          <div class="content">col-xs-6 col-sm-12 col-md-6</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="content">col-xs-12 col-sm-6 col-md-4</div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-8">
+          <div class="content">col-xs-12 col-sm-6 col-md-8</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-12 col-md-8">
+          <div class="content">col-xs-6 col-sm-12 col-md-8</div>
+        </div>
+        <div class="col-xs-6 col-sm-12 col-md-4">
+          <div class="content">col-xs-6 col-sm-12 col-md-4</div>
+        </div>
+      </div>
+      <pre><code>&lt;div class="row">
+    &lt;div class="col-xs-6 col-sm-10 col-md-8">
+        &lt;div class="content">Responsive&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-6 col-sm-2 col-md-4">
+        &lt;div class="content">Responsive&lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
+    </section>
+    <section class="page-section">
+      <h2>Auto Width</h2>
+      <p>You can set the width of one column and the others will automatically resize around it.</p>
+      <div class="row">
+        <div class="col-xs">
+          <div class="content">col-xs (Auto)</div>
+        </div>
+        <div class="col-xs">
+          <div class="content">col-xs (Auto)</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs">
+          <div class="content">col-xs (Auto)</div>
+        </div>
+        <div class="col-xs-6">
+          <div class="content">col-xs-6 (50%)</div>
+        </div>
+        <div class="col-xs">
+          <div class="content">col-xs (Auto)</div>
+        </div>
+      </div><pre><code>&lt;div class="row">
+    &lt;div class="col-xs">
+        &lt;div class="content">Auto&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs">
+        &lt;div class="content">Auto&lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
+    </section>
+    <section class="page-section">
+      <h2>Nesting</h2>
+      <p>Grid components are infinitely nestable inside of other grid components.</p>
+      <div class="row">
+        <div class="col-xs-7">
+          <div class="content content-container">
+            <div class="row">
+              <div class="col-xs-9">
+                <div class="content content-container">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <div class="content"></div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3">
+                <div class="content content-container">
+                  <div class="row">
+                    <div class="col-xs">
+                      <div class="content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-5">
+          <div class="content content-container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="content content-container">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <div class="content"></div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><pre><code>&lt;div class="row">
+    &lt;div class="col-xs">
+        &lt;div class="content">
+            &lt;div class="row">
+                &lt;div class="col-xs">
+                    &lt;div class="content">Auto&lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
+    </section>
+    <section class="page-section">
+      <h2>No Gutter</h2>
+      <p>Remove gutter from row.</p>
+      <h3><code>.row-no-gutter</code></h3>
+      <div class="row row-no-gutter">
+        <div class="col-xs-6">
+          <div class="content">col-xs-6</div>
+        </div>
+        <div class="col-xs-6">
+          <div class="content">col-xs-6</div>
+        </div>
+      </div>
+      <pre><code>&lt;div class="row row-no-gutter">
+    &lt;div class="col-xs-6">
+        &lt;div class="content">&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-6">
+        &lt;div class="content">&lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
+    </section>
+    <section class="page-section">
+      <h2>Equal Column Height</h2>
+      <p>Add the same height to each column.</p>
+      <h3><code>.row-equal-height</code></h3>
+      <div class="row row-equal-height">
+        <div class="col-xs-6">
+          <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis velit non
+            gravida venenatis. Praesent consequat lectus purus, ut scelerisque velit condimentum eu. Maecenas sagittis
+            ante ut turpis varius interdum. Quisque tellus ipsum, eleifend non ipsum id, suscipit ultricies neque.</div>
+        </div>
+        <div class="col-xs-6">
+          <div class="content">Full-height, even when my content doesn't fill the space.</div>
+        </div>
+      </div>
+      <pre><code>&lt;div class="row row-equal-height">
+    &lt;div class="col-xs-6">
+        &lt;div class="content">&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-6">
+        &lt;div class="content">&lt;/div>
+    &lt;/div>
+&lt;/div></code></pre>
+    </section>
+    <section class="page-section">
+      <h2>Horizontal alignment</h2>
+      <p>FlexGrid properties for horizontal alignment. Add classes to align elements.</p>
+      <h3><code>.row-start</code></h3>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="content content-container">
+            <div class="row row-start">
+              <div class="col-xs-6">
+                <div class="content"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><pre><code>&lt;div class="row row-start">
+    &lt;div class="col-xs-6">
+        &lt;div class="content">Start&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+      <h3><code>.row-center</code></h3>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="content content-container">
+            <div class="row row-center">
+              <div class="col-xs-6">
+                <div class="content"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><pre><code>&lt;div class="row row-center">
+    &lt;div class="col-xs-6">
+        &lt;div class="content">Center&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+      <h3><code>.row-end</code></h3>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="content content-container">
+            <div class="row row-end">
+              <div class="col-xs-6">
+                <div class="content"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <pre><code>&lt;div class="row row-end">
+    &lt;div class="col-xs-6">
+        &lt;div class="content">End&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        <h3><code>.row-around</code></h3>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="content content-container">
+              <div class="row row-around">
+                <div class="col-xs-2">
+                  <div class="content"></div>
+                </div>
+                <div class="col-xs-2">
+                  <div class="content"></div>
+                </div>
+                <div class="col-xs-2">
+                  <div class="content"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><pre><code>&lt;div class="row row-around">
+    &lt;div class="col-xs-2">
+        &lt;div class="content">Around&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-2">
+        &lt;div class="content">Around&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-2">
+        &lt;div class="content">Around&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        <h3><code>.row-between</code></h3>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="content content-container">
+              <div class="row row-between">
+                <div class="col-xs-2">
+                  <div class="content"></div>
+                </div>
+                <div class="col-xs-2">
+                  <div class="content"></div>
+                </div>
+                <div class="col-xs-2">
+                  <div class="content"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><pre><code>&lt;div class="row row-between">
+    &lt;div class="col-xs-2">
+        &lt;div class="content">Between&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-2">
+        &lt;div class="content"Between&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-2">
+        &lt;div class="content">Between&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+    </section>
+    <section class="page-section">
+      <h2>Vertical alignment</h2>
+      <p>FlexGrid properties for vertical alignment. Add classes to align elements.</p>
+      <h3><code>.row-top</code></h3>
+      <div class="row row-top">
+        <div class="col-xs-6">
+          <div class="content content-large"></div>
+        </div>
+        <div class="col-xs-6">
+          <div class="content"></div>
+        </div>
+      </div><pre><code>&lt;div class="row row-top">
+    &lt;div class="col-xs-6">
+        &lt;div class="content">Top&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+      <h3><code>.row-middle</code></h3>
+      <div class="row row-middle">
+        <div class="col-xs-6">
+          <div class="content content-large"></div>
+        </div>
+        <div class="col-xs-6">
+          <div class="content"></div>
+        </div>
+      </div><pre><code>&lt;div class="row row-middle">
+    &lt;div class="col-xs-6">
+        &lt;div class="content">Middle&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+      <h3><code>.row-bottom</code></h3>
+      <div class="row row-bottom">
+        <div class="col-xs-6">
+          <div class="content content-large"></div>
+        </div>
+        <div class="col-xs-6">
+          <div class="content"></div>
+        </div>
+      </div><pre><code>&lt;div class="row row-bottom">
+    &lt;div class="col-xs-6">
+        &lt;div class="content">Bottom&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+    </section>
+    <section class="page-section">
+      <h2>Reversing</h2>
+      <h3><code>.row-reverse</code></h3>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="content content-container">
+            <div class="row row-reverse">
+              <div class="col-xs-2">
+                <div class="content">1</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">2</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">3</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">4</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">5</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">6</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><pre><code>&lt;div class="row row-reverse">
+    &lt;div class="col-xs-2">
+        &lt;div class="content">1&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-2">
+        &lt;div class="content">2&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-2">
+        &lt;div class="content">3&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+    </section>
+    <section class="page-section">
+      <h2>Reordering</h2>
+      <p>Add classes to reorder columns.</p>
+      <h3><code>.col-first</code></h3>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="content content-container">
+            <div class="row">
+              <div class="col-xs-2">
+                <div class="content">1</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">2</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">3</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">4</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">5</div>
+              </div>
+              <div class="col-xs-2 col-first">
+                <div class="content">6</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><pre><code>&lt;div class="row">
+    &lt;div class="col-xs-2">
+        &lt;div class="content">1&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-2">
+        &lt;div class="content">2&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-2 col-first">
+        &lt;div class="content">3&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+      <h3><code>.col-last</code></h3>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="content content-container">
+            <div class="row">
+              <div class="col-xs-2 col-last">
+                <div class="content">1</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">2</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">3</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">4</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">5</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="content">6</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><pre><code>&lt;div class="row">
+    &lt;div class="col-xs-2 col-last">
+        &lt;div class="content">1&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-2">
+        &lt;div class="content">2&lt;/div>
+    &lt;/div>
+    &lt;div class="col-xs-2">
+        &lt;div class="content">3&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+    </section>
+  </div>
+  <footer id="footer">
+    <div class="row row-center">
+      <div class="col-xs-12">
+        <a href="mailto:yukozlovskiy@gmail.com">yukozlovskiy@gmail.com</a>
+      </div>
+    </div>
+  </footer>
 </body>
-         <script>
-        // Detects flex wrap for current browser
-           var has_flex_wrap_support = function () {
-           let d = document.documentElement.style
-           return (('flexWrap' in d) || ('WebkitFlexWrap' in d) || ('msFlexWrap' in d));
-           }
-        // Add the class no-flexwrap to body depending on result of test
-           var check_for_flexwrap = function () {
-           if ( ! has_flex_wrap_support() )
-           document.body.classList.add('no-flexwrap');
-           };
-        </script>
 </html>
 
