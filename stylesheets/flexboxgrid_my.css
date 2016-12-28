@@ -23,11 +23,11 @@ div {
 /* attivo la mia flexbox con la classe row */
 
 .row {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;      /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;   /* TWEENER - IE 10 */
+    display: -webkit-box;   /* NEW - Chrome */
+    display: flex;          /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 
@@ -40,8 +40,8 @@ body div {
     display: inherit;
     /* imposta i parametri dimensione della flexbox */
     -ms-flex: 0 1 -ms-fit-content;
-    -moz-box-flex: 0 1 -ms-fit-content;
-    -webkit-box-flex: 0 1 -webkit-fit-content;
+    -moz-box-flex: 0.1;
+    -webkit-box-flex: 0.1;
     flex: 0 1 -moz-fit-content;
     /* imposta se la flexbox spezza o no i suoi oggetti */
     /* in una tabella impostare no-wrap */
