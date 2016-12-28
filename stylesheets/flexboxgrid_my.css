@@ -208,6 +208,7 @@ body div {
     flex-basis: fill;
     display:block;
     width:100%;
+    break-before: always;
 }
 
 .col-xs{
