@@ -204,6 +204,7 @@ body div {
     flex-basis: -webkit-fill-available;
     flex-basis: -moz-available;
     flex-basis: fill;
+    display:block;
 }
 
 .col-xs{
