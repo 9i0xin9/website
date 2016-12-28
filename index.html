@@ -10,6 +10,19 @@
         <link rel="stylesheet" type="text/css" href="crow_2_1_o.css"> -->
         <!-- replace media queries in old browsers https://github.com/scottjehl/Respond -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script>
+        // Detects flex wrap for current browser
+           var has_flex_wrap_support = function () {
+           let d = document.documentElement.style
+           return (('flexWrap' in d) || ('WebkitFlexWrap' in d) || ('msFlexWrap' in d));
+           }
+        // Add the class no-flexwrap to body depending on result of test
+           var check_for_flexwrap = function () {
+           if ( ! has_flex_wrap_support() )
+           document.body.classList.add('no-flexwrap');
+           };
+        </script>
+        
     </head>
     <body>
         <!-- <div class="c-navbar" style="">
