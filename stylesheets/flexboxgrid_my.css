@@ -16,8 +16,15 @@ div {
     border: 1px dotted snow;
 }
 
-.no-flexwrap div { display: block; }
-.no-flexwrap [class*="col-xs"] { display: inline-block; }
+.no-flexwrap div {
+    display: block !important; 
+}
+.no-flexwrap .row {
+    display: block !important; 
+}
+.no-flexwrap [class*="col-xs"] {
+    display: inline-block !important; 
+}
 
 /**********************     GENERAL SETTING SECTION     **********************/
 
