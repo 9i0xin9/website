@@ -23,6 +23,8 @@ div {
 /* attivo la mia flexbox con la classe row */
 
 .row {
+    display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -38,6 +40,7 @@ body div {
     display: inherit;
     /* imposta i parametri dimensione della flexbox */
     -ms-flex: 0 1 -ms-fit-content;
+    -moz-box-flex: 0 1 -ms-fit-content;
     -webkit-box-flex: 0 1 -webkit-fit-content;
     flex: 0 1 -moz-fit-content;
     /* imposta se la flexbox spezza o no i suoi oggetti */
