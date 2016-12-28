@@ -201,6 +201,7 @@ body div {
     -webkit-flex: 0 1 auto;      /* Chrome */
     -ms-flex: 0 1 auto;          /* IE 10 */
     flex: 0 1 auto;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    min-width:300px; /* !!! TEST !!! */
 }
 
 
