@@ -142,8 +142,8 @@ body div {
 }
 
 .col-xs-max, [class*="col-xs"] .col-xs-max, .col-xs-max>div {
-    flex-basis: -webkit-fill-available;
-    flex-basis: -moz-available;
+    flex-basis: 100%;
+    flex-basis: 100%;
     flex-basis: fill;
     /* necessary for box-flex */
     width: 100%;
@@ -332,8 +332,8 @@ body div {
         flex: 12 0 0%;
     }
     .col-sm-max, [class*="col-sm"] .col-sm-max, .col-sm-max>div {
-        flex-basis: -webkit-fill-available;
-        flex-basis: -moz-available;
+        flex-basis: 100%;
+        flex-basis: 100%;
         flex-basis: fill;
         /* necessary for box-flex */
         width: 100%;
