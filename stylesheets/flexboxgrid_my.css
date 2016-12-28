@@ -67,6 +67,8 @@ body div {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     box-lines: multiple;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
     /* allineamento verticale degli elementi interni alla flexbox */
     align-items: center;
     /* auto | flex-start | flex-end | center | baseline | stretch */
