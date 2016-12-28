@@ -74,61 +74,91 @@ body div {
 /*************************     DIMENSION SECTION     *************************/
 
 .col-xs-min, [class*="col-xs"] .col-xs-min, .row .col-xs-min > div {
-    -ms-flex: 0 0 -moz-fit-content;
-    -webkit-box-flex: 0.0;
-    flex: 0 0 -moz-fit-content;
+    -webkit-box-flex: 0.0;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 0.0;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 0 0 auto;      /* Chrome */
+    -ms-flex: 0 0 auto;          /* IE 10 */
+    flex: 0 0 auto;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 [class*="col-xs-"] > div{
-  -ms-flex: 1 0 0%;
-  -webkit-box-flex: 1.0;
-  flex: 1 0 0%;
+    -webkit-box-flex: 1.0;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1.0;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1 0 0%;      /* Chrome */
+    -ms-flex: 1 0 0%;          /* IE 10 */
+    flex: 1 0 0%;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 .col-xs-1, [class*="col-xs"] .col-xs-1 {
-    -ms-flex: 1 0 0%;
-    -webkit-box-flex: 1.0;
-    flex: 1 0 0%;
+    -webkit-box-flex: 1.0;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1.0;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1 0 0%;      /* Chrome */
+    -ms-flex: 1 0 0%;          /* IE 10 */
+    flex: 1 0 0%;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .col-xs-2, [class*="col-xs"] .col-xs-2 {
-    -ms-flex: 2 0 0%;
-    -webkit-box-flex: 2.0;
-    flex: 2 0 0%;
+    -webkit-box-flex: 2.0;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 2.0;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 2 0 0%;      /* Chrome */
+    -ms-flex: 2 0 0%;          /* IE 10 */
+    flex: 2 0 0%;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .col-xs-3, [class*="col-xs"] .col-xs-3 {
-    -ms-flex: 3 0 0%;
-    -webkit-box-flex: 3.0;
-    flex: 3 0 0%;
+    -webkit-box-flex: 3.0;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 3.0;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 3 0 0%;      /* Chrome */
+    -ms-flex: 3 0 0%;          /* IE 10 */
+    flex: 3 0 0%;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .col-xs-4, [class*="col-xs"] .col-xs-4 {
-    -ms-flex: 4 0 0%;
-    -webkit-box-flex: 4.0;
-    flex: 4 0 0%;
+    -webkit-box-flex: 4.0;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 4.0;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 4 0 0%;      /* Chrome */
+    -ms-flex: 4 0 0%;          /* IE 10 */
+    flex: 4 0 0%;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .col-xs-5, [class*="col-xs"] .col-xs-5 {
-    -ms-flex: 5 0 0%;
-    -webkit-box-flex: 5.0;
-    flex: 5 0 0%;
+    -webkit-box-flex: 5.0;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 5.0;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 5 0 0%;      /* Chrome */
+    -ms-flex: 5 0 0%;          /* IE 10 */
+    flex: 5 0 0%;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .col-xs-6, [class*="col-xs"] .col-xs-6 {
-    -ms-flex: 6 0 0%;
-    -webkit-box-flex: 6.0;
-    flex: 6 0 0%;
+    -webkit-box-flex: 6.0;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 6.0;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 6 0 0%;      /* Chrome */
+    -ms-flex: 6 0 0%;          /* IE 10 */
+    flex: 6 0 0%;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .col-xs-7, [class*="col-xs"] .col-xs-7 {
-    -ms-flex: 7 0 0%;
-    -webkit-box-flex: 7.0;
-    flex: 7 0 0%;
+    -webkit-box-flex: 7.0;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 7.0;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 7 0 0%;      /* Chrome */
+    -ms-flex: 7 0 0%;          /* IE 10 */
+    flex: 7 0 0%;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .col-xs-8, [class*="col-xs"] .col-xs-8 {
-    -ms-flex: 8 0 0%;
-    -webkit-box-flex: 8.0;
-    flex: 8 0 0%;
+    -webkit-box-flex: 8.0;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 8.0;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 8 0 0%;      /* Chrome */
+    -ms-flex: 8 0 0%;          /* IE 10 */
+    flex: 8 0 0%;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .col-xs-, [class*="col-xs"] .col-xs-9 {
@@ -138,21 +168,30 @@ body div {
 }
 
 .col-xs-10, [class*="col-xs"] .col-xs-10 {
-    -ms-flex: 10 0 0%;
-   -webkit-box-flex: 10.0;
-    flex: 10 0 0%;
+    -webkit-box-flex: 10.0;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 10.0;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 10 0 0%;      /* Chrome */
+    -ms-flex: 10 0 0%;          /* IE 10 */
+    flex: 10 0 0%;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .col-xs-11, [class*="col-xs"] .col-xs-11 {
-    -ms-flex: 11 0 0%;
-    -webkit-box-flex: 11.0;
-    flex: 11 0 0%;
+    -webkit-box-flex: 11.0;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 11.0;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 11 0 0%;      /* Chrome */
+    -ms-flex: 11 0 0%;          /* IE 10 */
+    flex: 11 0 0%;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .col-xs-12, [class*="col-xs"] .col-xs-12 {
-    -ms-flex: 12 0 0%;
-    -webkit-box-flex: 12.0;
-    flex: 12 0 0%;
+    -webkit-box-flex: 12.0;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 12.0;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 12 0 0%;      /* Chrome */
+    -ms-flex: 12 0 0%;          /* IE 10 */
+    flex: 12 0 0%;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .col-xs-max, [class*="col-xs"] .col-xs-max, .row .col-xs-max > div {
@@ -162,14 +201,20 @@ body div {
 }
 
 .col-xs{
-  -ms-flex: 1 1 -moz-fit-content;
-  -webkit-box-flex: 1.1;
-  flex: 1 1 -moz-fit-content;
+    -webkit-box-flex: 1.1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1.1;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1 1 auto;      /* Chrome */
+    -ms-flex: 1 1 auto;          /* IE 10 */
+    flex: 1 1 auto;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 .col-xs > div{
-  -ms-flex: 0 1 -moz-fit-content;
-  -webkit-box-flex: 0.1;
-  flex: 0 1 -moz-fit-content;
+    -webkit-box-flex: 0.1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 0.1;         /* OLD - Firefox 19- */
+    width: 1%;                   /* For old syntax, otherwise collapses. */
+    -webkit-flex: 0 1 auto;      /* Chrome */
+    -ms-flex: 0 1 auto;          /* IE 10 */
+    flex: 0 1 auto;              /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 
