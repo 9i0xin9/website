@@ -36,4 +36,13 @@ style.css">
         </div> -->
         </div>
     </body>
+    <script>
+        var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+
+if (isSafari) {
+var sheet = document.createElement('style')
+sheet.innerHTML = "body div {-webkit-align-items: stretch;}";
+document.body.appendChild(sheet);
+}
+    </script>
 </html>
