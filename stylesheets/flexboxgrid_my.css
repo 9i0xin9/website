@@ -68,6 +68,14 @@ body div {
     justify-content: center;
     /* in una tabella impostare hidden o no */
     /*overflow: hidden;*/
+    
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 
