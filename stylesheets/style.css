@@ -34,6 +34,7 @@ body div {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     /* v align */
+    -moz-box-align: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
@@ -42,6 +43,7 @@ body div {
     align-self: stretch;
     /********************/
     /* h align */
+    -moz-box-pack: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
