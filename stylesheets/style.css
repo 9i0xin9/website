@@ -14,6 +14,7 @@ body div {
     box-sizing: border-box;
     display: inherit;
     /* flex */
+    box-flex: 0.1;
     -moz-box-flex: 0.1;
     -webkit-box-flex: 0.1;
     -webkit-flex: 0 1 auto;
