@@ -66,8 +66,8 @@ body div {
 }
 
 [class*="col-xs-"]>div {
-    box-flex: 0.0;
-    -moz-box-flex: 0.0;
+    box-flex: 1.0;
+    -moz-box-flex: 1.0;
     -webkit-box-flex: 1.0;
     -webkit-flex: 1 0 0%;
     -ms-flex: 1 0 0%;
@@ -197,7 +197,7 @@ body div {
 
 .col-xs {
     box-flex: 1.1;
-    -moz-box-flex: 1.1;
+    -moz-box-flex: 0;
     -webkit-box-flex: 1.1;
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
@@ -206,7 +206,7 @@ body div {
 
 .col-xs>div {
     box-flex: 0.1;
-    -moz-box-flex: 0.1;
+    -moz-box-flex: 0;
     -webkit-box-flex: 0.1;
     -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
