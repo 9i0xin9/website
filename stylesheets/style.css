@@ -12,7 +12,6 @@
 body div {
     /* general */
     box-sizing: border-box;
-    display: block;
     display: inherit;
     /* flex */
     box-flex: 0.1;
@@ -67,8 +66,8 @@ body div {
 }
 
 [class*="col-xs-"]>div {
-    box-flex: 1.0;
-    -moz-box-flex: 1.0;
+    box-flex: 0.0;
+    -moz-box-flex: 0.0;
     -webkit-box-flex: 1.0;
     -webkit-flex: 1 0 0%;
     -ms-flex: 1 0 0%;
