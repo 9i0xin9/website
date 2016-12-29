@@ -324,7 +324,7 @@ body div {
         -ms-flex: 8 0 0%;
         flex: 8 0 0%;
     }
-    .col-sm-, [class*="col-sm"] .col-sm-9 {
+    .col-sm-9, [class*="col-sm"] .col-sm-9 {
         -webkit-box-flex: 9.0;
         -webkit-flex: 9 0 0%;
         -ms-flex: 9 0 0%;
@@ -501,7 +501,7 @@ body div {
         -ms-flex: 8 0 0%;
         flex: 8 0 0%;
     }
-    .col-md-, [class*="col-md"] .col-md-9 {
+    .col-md-9, [class*="col-md"] .col-md-9 {
         -webkit-box-flex: 9.0;
         -webkit-flex: 9 0 0%;
         -ms-flex: 9 0 0%;
@@ -679,7 +679,7 @@ body div {
         -ms-flex: 8 0 0%;
         flex: 8 0 0%;
     }
-    .col-lg-, [class*="col-lg"] .col-lg-9 {
+    .col-lg-9, [class*="col-lg"] .col-lg-9 {
         -webkit-box-flex: 9.0;
         -webkit-flex: 9 0 0%;
         -ms-flex: 9 0 0%;
