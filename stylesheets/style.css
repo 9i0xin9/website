@@ -22,10 +22,10 @@ body div {
     flex: 0 1 auto;
     /* wrap */
     box-direction: normal;
-    -moz-box-direction: normal;
     box-orient: horizontal;
-    -moz-box-orient: horizontal;
     box-lines: multiple;
+    -moz-box-direction: normal;
+    -moz-box-orient: horizontal;
     -moz-box-lines: multiple; 
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
@@ -34,6 +34,7 @@ body div {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     /* v align */
+    box-align: center;
     -moz-box-align: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -43,6 +44,7 @@ body div {
     align-self: stretch;
     /********************/
     /* h align */
+    box-pack: center;
     -moz-box-pack: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -54,6 +56,7 @@ body div {
 /***     DIMENSION SECTION     ***/
 
 .col-xs-min, [class*="col-xs"] .col-xs-min, .col-xs-min>div {
+    -moz-box-flex: 0.0;
     -webkit-box-flex: 0.0;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
@@ -62,6 +65,7 @@ body div {
 }
 
 [class*="col-xs-"]>div {
+    -moz-box-flex: 1.0;
     -webkit-box-flex: 1.0;
     -webkit-flex: 1 0 0%;
     -ms-flex: 1 0 0%;
@@ -70,6 +74,7 @@ body div {
 }
 
 .col-xs-1, [class*="col-xs"] .col-xs-1 {
+    -moz-box-flex: 1.0;
     -webkit-box-flex: 1.0;
     -webkit-flex: 1 0 0%;
     -ms-flex: 1 0 0%;
@@ -125,7 +130,7 @@ body div {
     flex: 8 0 0%;
 }
 
-.col-xs-, [class*="col-xs"] .col-xs-9 {
+.col-xs-9, [class*="col-xs"] .col-xs-9 {
     -webkit-box-flex: 9.0;
     -webkit-flex: 9 0 0%;
     -ms-flex: 9 0 0%;
