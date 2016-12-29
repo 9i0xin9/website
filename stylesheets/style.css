@@ -77,7 +77,7 @@ body div {
 
 .col-xs-1, [class*="col-xs"] .col-xs-1 {
     box-flex: 1.0;
-    -moz-box-flex: 1;
+    -moz-box-flex: 0;
     -webkit-box-flex: 1.0;
     -webkit-flex: 1 0 0%;
     -ms-flex: 1 0 0%;
@@ -86,7 +86,7 @@ body div {
 
 .col-xs-2, [class*="col-xs"] .col-xs-2 {
         box-flex: 2.0;
-    -moz-box-flex: 2;
+    -moz-box-flex: 0;
     -webkit-box-flex: 2.0;
     -webkit-flex: 2 0 0%;
     -ms-flex: 2 0 0%;
@@ -95,7 +95,7 @@ body div {
 
 .col-xs-3, [class*="col-xs"] .col-xs-3 {
         box-flex: 3.0;
-    -moz-box-flex: 3;
+    -moz-box-flex: 0;
     -webkit-box-flex: 3.0;
     -webkit-flex: 3 0 0%;
     -ms-flex: 3 0 0%;
@@ -104,7 +104,7 @@ body div {
 
 .col-xs-4, [class*="col-xs"] .col-xs-4 {
         box-flex: 4.0;
-    -moz-box-flex: 4;
+    -moz-box-flex: 0;
     -webkit-box-flex: 4.0;
     -webkit-flex: 4 0 0%;
     -ms-flex: 4 0 0%;
@@ -113,7 +113,7 @@ body div {
 
 .col-xs-5, [class*="col-xs"] .col-xs-5 {
         box-flex: 5.0;
-    -moz-box-flex: 5;
+    -moz-box-flex: 0;
     -webkit-box-flex: 5.0;
     -webkit-flex: 5 0 0%;
     -ms-flex: 5 0 0%;
@@ -122,7 +122,7 @@ body div {
 
 .col-xs-6, [class*="col-xs"] .col-xs-6 {
         box-flex: 6.0;
-    -moz-box-flex: 6;
+    -moz-box-flex: 0;
     -webkit-box-flex: 6.0;
     -webkit-flex: 6 0 0%;
     -ms-flex: 6 0 0%;
@@ -131,7 +131,7 @@ body div {
 
 .col-xs-7, [class*="col-xs"] .col-xs-7 {
         box-flex: 7.0;
-    -moz-box-flex: 7;
+    -moz-box-flex: 0;
     -webkit-box-flex: 7.0;
     -webkit-flex: 7 0 0%;
     -ms-flex: 7 0 0%;
@@ -140,7 +140,7 @@ body div {
 
 .col-xs-8, [class*="col-xs"] .col-xs-8 {
         box-flex: 8.0;
-    -moz-box-flex: 8;
+    -moz-box-flex: 0;
     -webkit-box-flex: 8.0;
     -webkit-flex: 8 0 0%;
     -ms-flex: 8 0 0%;
@@ -149,7 +149,7 @@ body div {
 
 .col-xs-9, [class*="col-xs"] .col-xs-9 {
         box-flex: 9.0;
-    -moz-box-flex: 9;
+    -moz-box-flex: 0;
     -webkit-box-flex: 9.0;
     -webkit-flex: 9 0 0%;
     -ms-flex: 9 0 0%;
@@ -158,7 +158,7 @@ body div {
 
 .col-xs-10, [class*="col-xs"] .col-xs-10 {
         box-flex: 10.0;
-    -moz-box-flex: 10;
+    -moz-box-flex: 0;
     -webkit-box-flex: 10.0;
     -webkit-flex: 10 0 0%;
     -ms-flex: 10 0 0%;
@@ -167,7 +167,7 @@ body div {
 
 .col-xs-11, [class*="col-xs"] .col-xs-11 {
         box-flex: 11.0;
-    -moz-box-flex: 11;
+    -moz-box-flex: 0;
     -webkit-box-flex: 11.0;
     -webkit-flex: 11 0 0%;
     -ms-flex: 11 0 0%;
@@ -176,7 +176,7 @@ body div {
 
 .col-xs-12, [class*="col-xs"] .col-xs-12 {
         box-flex: 12.0;
-    -moz-box-flex: 12;
+    -moz-box-flex: 0;
     -webkit-box-flex: 12.0;
     -webkit-flex: 12 0 0%;
     -ms-flex: 12 0 0%;
@@ -192,6 +192,7 @@ body div {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     max-width: 100%;
+    min-width: 100%;
     /**************************/
 }
 
