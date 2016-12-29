@@ -20,6 +20,7 @@ body div {
     flex: 0 1 auto;
     /* wrap */
     -moz-box-orient: horizontal;
+    box-lines: multiple;
     -moz-box-lines: multiple;
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
