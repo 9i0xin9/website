@@ -1,7 +1,6 @@
 /***     GENERAL SETTING SECTION     ***/
 
 .row {
-    display: box;
     display: -moz-box;
     display: -webkit-box;
     display: -webkit-flex;
