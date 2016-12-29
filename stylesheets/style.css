@@ -1,6 +1,7 @@
 /***     GENERAL SETTING SECTION     ***/
 
 .row {
+    display: box;
     display: -moz-box;
     display: -webkit-box;
     display: -webkit-flex;
@@ -19,9 +20,12 @@ body div {
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     /* wrap */
+    box-direction: normal;
+    -moz-box-direction: normal;
+    box-orient: horizontal;
     -moz-box-orient: horizontal;
     box-lines: multiple;
-    -moz-box-lines: multiple;
+    -moz-box-lines: multiple; 
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
     -webkit-box-lines: multiple;
