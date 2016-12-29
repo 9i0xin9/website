@@ -13,11 +13,14 @@ body div {
     box-sizing: border-box;
     display: inherit;
     /* flex */
+    -moz-box-flex: 0.1;
     -webkit-box-flex: 0.1;
     -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     /* wrap */
+    -moz-box-orient: horizontal;
+    -moz-box-lines: multiple;
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
     -webkit-box-lines: multiple;
