@@ -12,6 +12,7 @@
 body div {
     /* general */
     box-sizing: border-box;
+    display: block;
     display: inherit;
     /* flex */
     box-flex: 0.1;
