@@ -43,6 +43,8 @@ body div {
     -webkit-align-items: center;
     align-items: center;
     /* missing in safari */
+    -ms-align-self: stretch;
+    -webkit-align-self: stretch;
     align-self: stretch;
     /********************/
     /* h align */
