@@ -13,7 +13,7 @@ body div {
     /* general */
     box-sizing: border-box;
     display: inherit;
-    overflow: hidden;
+    /*overflow: hidden;*/
     /* flex */
     box-flex: 0.1;
     -moz-box-flex: 0;
