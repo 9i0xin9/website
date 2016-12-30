@@ -14,9 +14,9 @@ row = with this class we start a gridblock of contents, everything inside this b
           if definition class are missing all the grid is taking xs default settings
           
           ex. <div class="row"> 
-                <div class="sm-...></div>  
-                <div></div>
-                <div></div>
+                <div class="sm-...></div>  <!-- xs will follows default rules cause xs it's undefined, sm, md, lg will follow           defined custom parameters, sm-... parameters define by (min-width:...) all followed sizes but never previous sizes -->
+                <div></div> <!-- cause parametrs affects also brothers of elements this div get some custom sm- rules -->
+                <div></div> <!-- same for this -->
               </div> 
                 
                
