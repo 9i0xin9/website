@@ -27,11 +27,9 @@ xs-[1 | 6] = set grows status
 xs-fit = set a content status
 xs-full = set a content status
 
-<code>
-
-|              |             itself             |             childs             |             brothers           |
-| xs-[1 | 6]   |          grow: [1 | 6]         |          childs grow: 1        |         brothers grow: 1       |
-| xs-fit       |    grow: NO, content: inline   |    grow: NO, content: inline   |           NOT AFFECTED         |
-| xs-full      | grow: NO, entire space (block) | grow: NO, entire space (block) |           NOT AFFECTED         |
-
-</code>
+<code> <pre>
+             |             itself             |             childs             |       brothers     |
+xs-[1 | 6]   |          grow: [1 | 6]         |          childs grow: 1        |   brothers grow: 1 |
+xs-fit       |    grow: NO, content: inline   |    grow: NO, content: inline   |     NOT AFFECTED   |
+xs-full      | grow: NO, entire space (block) | grow: NO, entire space (block) |     NOT AFFECTED   |
+</pre> </code>
