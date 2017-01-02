@@ -31,8 +31,8 @@
     /* flex */
     -moz-box-flex: 1;         /* OLD grow value */
     -webkit-box-flex: 1;      /* OLD grow value */
-    width: 100%;              /* setted not to collapse ? */
-    max-width: 100%;
+    width: auto;              /* setted not to collapse ? */ 
+    max-width: auto;
     -webkit-flex: 1 1 0%;     /* all cells to extend important also shrink */
     -ms-flex: 1 1 0%;         /* setting 0% make all cells equal */
     flex: 1 1 0%;
