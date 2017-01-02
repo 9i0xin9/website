@@ -143,12 +143,20 @@
 
 .fit div,
 .row .fit{
-   flex: 0 1 auto;
-    /* necessary for box-flex */
+   /*flex: 0 1 auto;
+    /* necessary for box-flex
     width: auto;
     -webkit-flex-basis: auto;
     -ms-flex-preferred-size: auto;
-    max-width: initial;
+    max-width: initial; */
+    
+     box-flex: 0.0;
+    -moz-box-flex: 0.0;
+    -webkit-box-flex: 0.0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
 }
 
 /* formattazione per il settaggio */
