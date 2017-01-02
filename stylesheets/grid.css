@@ -151,6 +151,10 @@
     max-width: initial;
 }
 
+.row .fit{
+display:inline;
+}
+
 /* formattazione per il settaggio */
 
 [id]>div:nth-child(even) {
