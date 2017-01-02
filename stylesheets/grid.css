@@ -139,6 +139,10 @@
     flex-basis: -webkit-fill-available;
     flex-basis: -moz-available;
     flex-basis: fill;
+
+-webkit-flex-basis: 100%;
+-ms-flex-preferred-size: 100%;
+
 }
 
 .fit div,
