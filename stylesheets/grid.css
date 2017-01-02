@@ -148,7 +148,7 @@
     width: auto;
     -webkit-flex-basis: auto;
     -ms-flex-preferred-size: auto;
-    max-width: auto;
+    max-width: initial;
 }
 
 /* formattazione per il settaggio */
