@@ -123,14 +123,22 @@
 
 .full div,
 .row .full{
-    flex-basis: -webkit-fill-available;
+    /*flex-basis: -webkit-fill-available;
     flex-basis: -moz-available;
     flex-basis: fill;
-    /* necessary for box-flex */
+
     width: 100%;
-    -webkit-flex-basis: 100%;
+    /*-webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
-    max-width: 100%;
+    max-width: 100%;*/
+    
+    box-flex: 0.0;
+    -moz-box-flex: 0.0;
+    -webkit-box-flex: 0.0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    width: 100%;
 }
 
 .fit div,
