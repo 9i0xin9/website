@@ -1,7 +1,7 @@
 //general-settings.scss
 //testing how to compile css file
-@for $i from 1 through 4 {
-  .xs-#{$i} {
-    font-size: #{$i};
+.nav{
+  .row{
+    font-color:gold
   }
 }
